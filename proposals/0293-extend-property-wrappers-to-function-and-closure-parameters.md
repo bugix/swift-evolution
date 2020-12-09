@@ -293,7 +293,7 @@ struct Reference<Value> {
     nonmutating set
   }
     
-  var projectedValue: Self {
+  var projectedValue: Reference<Value> {
     self
   }
   
@@ -317,7 +317,7 @@ let useReference = { (_reference: Reference<Lowercased>) in
     }
   }
 
-  var $reference: Int {
+  var $reference: Reference<Lowercased> {
     get { 
       _reference.projectedValue
     }
