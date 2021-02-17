@@ -73,7 +73,7 @@ enum Product {
 }
 
 func buy(quantity: Int, of product: Product) {
-  precondition(quanity >= 1, "Invalid product quanity.")
+  precondition(quantity >= 1, "Invalid product quantity.")
   
   if quantity == 1 {
     ...
